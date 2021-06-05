@@ -69,8 +69,9 @@ btnSortResult.onclick = function () {
  * }
  */
 
-var txtGreetings = getEle("txtGreetings");
+
 slPersonUse.onchange = function () {
+  var txtGreetings = getEle("txtGreetings");
   var slPersonUse = getEle("slPersonUse").value;
   if (slPersonUse == "B") {
     txtGreetings.innerHTML = "Con chào bố ạ";
@@ -81,7 +82,7 @@ slPersonUse.onchange = function () {
   } else if (slPersonUse == "E") {
     txtGreetings.innerHTML = "Chào em gái ";
   } else {
-    txtGreetings.style.display = "none";
+    txtGreetings.innerHTML = "";
   }
 };
 
